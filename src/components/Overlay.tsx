@@ -58,11 +58,6 @@ export default function Overlay() {
         </motion.div>
 
       </div>
-
-      {/* Interactive elements need pointer-events-auto because parent has pointer-events-none */}
-      <div className="pointer-events-auto">
-        <ChatBox />
-      </div>
     </div>
   );
 }

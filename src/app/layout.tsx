@@ -30,7 +30,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <ChatBox />
+        <div className="relative z-[99999]">
+          <ChatBox />
+        </div>
       </body>
     </html>
   );

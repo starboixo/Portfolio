@@ -18,11 +18,12 @@ Here is the context about Amogh that you need to know:
 
 Be friendly, concise, and professional. Only answer questions related to Amogh's professional experience, skills, or portfolio. If someone asks something unrelated, kindly pivot back to Amogh. Keep answers short (1-3 sentences maximum) since they will be displayed in a small chat box widget.`;
 
-    const result = streamText({
+    const result = await streamText({
+        // @ts-expect-error Type mismatch between AI SDK and Google provider package versions.
         model: google("gemini-1.5-flash"),
         system: systemPrompt,
         messages,
     });
 
-    return result.toTextStreamResponse();
+    return result.toDataStreamResponse();
 }

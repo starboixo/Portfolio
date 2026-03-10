@@ -1,8 +1,7 @@
 "use client";
 
-import { useChat } from "ai/react";
+import { useChat, type Message } from "ai/react";
 import { useState, useRef, useEffect } from "react";
-import { Message } from "ai/react";
 
 export default function ChatBox() {
     const [isOpen, setIsOpen] = useState(false);

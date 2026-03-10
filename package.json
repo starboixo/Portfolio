@@ -11,7 +11,7 @@
   "dependencies": {
     "@ai-sdk/google": "^3.0.43",
     "@ai-sdk/react": "^3.0.118",
-    "ai": "^6.0.116",
+    "ai": "3.4",
     "clsx": "^2.1.1",
     "framer-motion": "^12.35.2",
     "next": "^14.2.35",
